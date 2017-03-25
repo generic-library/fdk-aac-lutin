@@ -1,3 +1,3 @@
 [submodule "fdk-aac"]
 	path = fdk-aac
-	url = https://github.com/generic-library/fdk-aac.git
+	url = ../fdk-aac.git
