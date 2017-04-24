@@ -36,15 +36,16 @@ def configure(target, my_module):
 	my_module.add_src_path("fdk-aac/libSBRdec/src/", "*.cpp")
 	my_module.add_src_path("fdk-aac/libSBRenc/src/", "*.cpp", recursive=True)
 	if target.get_arch() == "arm":
-		my_module.add_src_path("fdk-aac/libAACdec/src/arm", "*.cpp")
-		my_module.add_src_path("fdk-aac/libFDK/src/arm", "*.cpp")
-		my_module.add_src_path("fdk-aac/libSBRdec/src/arm", "*.cpp")
+		#my_module.add_src_path("fdk-aac/libAACdec/src/arm", "*.cpp")
+		#my_module.add_src_path("fdk-aac/libFDK/src/arm", "*.cpp")
+		#my_module.add_src_path("fdk-aac/libSBRdec/src/arm", "*.cpp")
+		pass
 	elif target.get_arch() == "mips":
-		my_module.add_src_path("fdk-aac/libAACdec/src/mips", "*.cpp")
-		my_module.add_src_path("fdk-aac/libFDK/src/mips", "*.cpp")
-		my_module.add_src_path("fdk-aac/libSBRdec/src/mips", "*.cpp")
-		my_module.add_src_path("fdk-aac/libSYS/src/mips", "*.cpp")
-		
+		#my_module.add_src_path("fdk-aac/libAACdec/src/mips", "*.cpp")
+		#my_module.add_src_path("fdk-aac/libFDK/src/mips", "*.cpp")
+		#my_module.add_src_path("fdk-aac/libSBRdec/src/mips", "*.cpp")
+		#my_module.add_src_path("fdk-aac/libSYS/src/mips", "*.cpp")
+		pass
 	
 	my_module.add_flag('cpp', [
 	    '-Wno-sequence-point',
